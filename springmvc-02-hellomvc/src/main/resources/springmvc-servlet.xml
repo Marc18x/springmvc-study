@@ -12,7 +12,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--    注册controller-->
+    <!--    注册controller 交给spring容器进行管理-->
     <bean id="/hello" class="com.marc.controller.HelloController"/>
 
 </beans>

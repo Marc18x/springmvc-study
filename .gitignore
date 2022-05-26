@@ -5,7 +5,7 @@ target/
 
 out
 
-### IntelliJ IDEA ###
+### IntelliJ IDEA files ###
 .idea
 .idea/modules.xml
 .idea/jarRepositories.xml
