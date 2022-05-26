@@ -17,7 +17,7 @@
     </properties>
 
     <dependencies>
-        <!-- 导入servlet和jsp的jar依赖-->
+        <!-- 导入servlet和jsp的jar依赖 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
