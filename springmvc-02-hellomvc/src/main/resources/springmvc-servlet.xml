@@ -3,6 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--    匹配url并且寻找对应的controller去处理它-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
@@ -13,6 +14,7 @@
     </bean>
 
     <!--    注册controller 交给spring容器进行管理-->
+    <!--    handler-->
     <bean id="/hello" class="com.marc.controller.HelloController"/>
 
 </beans>
