@@ -11,7 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<button type="submit">提交</button>
+<form action="/calc/1/2" method="post">
+    <button type="submit">提交</button>
+</form>
 
 </body>
 </html>
