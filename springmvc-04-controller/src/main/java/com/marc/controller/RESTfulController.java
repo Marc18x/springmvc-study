@@ -52,8 +52,21 @@ public class RESTfulController {
      *
      * @return
      */
-    @RequestMapping("post")
+    @RequestMapping("/post")
     public String postPage() {
+        //  默认重定向不能访问/WEB-INF目录的下层目录
+        //  发现是被服务器保护了，WEB-INF是Java的WEB应用的安全目录。也就是客户端无法访问，只有服务端可以源访问的目录
+        //  如果需要访问，可以用二次重定向，先跳一个中转，再跳到对应的下层目录 如 post1->post-redirect->/WEB-INF/jsp/post.jsp
+        return "redirect:/secret/post.html";
+    }
+
+    @RequestMapping("/post1")
+    public String postPageRedirect() {
+        return "redirect:/post-redirect";
+    }
+
+    @RequestMapping("/post-redirect")
+    public String postReirect() {
         return "post";
     }
 }
