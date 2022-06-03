@@ -3,18 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--    匹配url并且寻找对应的controller去处理它-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
-    <!--    视图解析器:dispatcherServlet传递给它 解析modelAndView 渲染jsp页面-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--    注册controller 交给spring容器进行管理-->
-    <!--    handler-->
-    <bean id="/hello" class="com.marc.controller.HelloController"/>
+    <bean id="/test" class="com.marc.controller.TestController"/>
 
 </beans>
