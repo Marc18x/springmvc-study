@@ -14,7 +14,7 @@
         <module>springmvc-02-mvcReview</module>
         <module>springmvc-03-annotation</module>
         <module>springmvc-04-controller</module>
-        <module>springmvc-05-test</module>
+        <module>springmvc-05-json</module>
     </modules>
 
     <properties>
@@ -42,6 +42,11 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
         </dependency>
     </dependencies>
 
